@@ -1,0 +1,19 @@
+CREATE TABLE Students (
+idStudents int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+firstnameStudents varchar(45) DEFAULT NULL,
+lastnameStudents varchar(45) DEFAULT NULL,
+uidStudents varchar(45) DEFAULT NULL,
+emailStudents varchar(45) DEFAULT NULL,
+majorStudents varchar(45) DEFAULT NULL,
+minorStudents varchar(45) DEFAULT NULL,
+pwdStudents LONGTEXT NOT NULL,
+);
+
+CREATE TABLE otherUsers (
+idOthers int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+firstnameOthers varchar(45) DEFAULT NULL,
+lastnameOthers varchar(45) DEFAULT NULL,
+uidOthers varchar(45) DEFAULT NULL,
+emailOthers varchar(45) DEFAULT NULL,
+pwdOthers LONGTEXT NOT NULL
+);
