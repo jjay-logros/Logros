@@ -1,0 +1,80 @@
+body {
+  background-image: url("https://stmed.net/sites/default/files/cube-wallpapers-25187-3286038.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #047809;
+  color: white;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #047809;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #4cafa1;
+  padding: 20px;
+  opacity: 0.93;
+  width: 50%;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 5px solid #333;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #ddf9f8;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "YES, GOOD JOB!";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "NO, TRY AGAIN";
+}
