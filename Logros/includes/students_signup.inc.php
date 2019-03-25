@@ -30,7 +30,7 @@ if(isset($_POST['signup-submit'])) {
     exit();
   }
   else {
-    $sql = "SELECT uidOthers FROM otherUsers WHERE uidOthers=?";
+    $sql = "SELECT uidStudents FROM Students WHERE uidStudents=?";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../students_signup.php?error=sqlerror");
@@ -46,7 +46,7 @@ if(isset($_POST['signup-submit'])) {
         exit();
       }
       else {
-        $sql = "INSERT INTO otherUsers (firstnameOthers, lastnameOthers, emailOthers, uidOthers, pwdOthers) VALUES(?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO Students (firstnameStudents, lastnameStudents, emailStudents, uidStudents, pwdStudents) VALUES(?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
           header("Location: ../students_signup.php?error=sqlerror");
